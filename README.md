@@ -10,7 +10,8 @@ This project consists of two data tables. First is the Accounts table and the Se
 
 - Accounts Table : This table is the main data table for the project. It consists of all the cutomer records. The schema for this table is
 
-```id        TEXT UNIQUE NOT NULL,
+```
+  id        TEXT UNIQUE NOT NULL,
   balance   DECIMAL(18,2) NOT NULL DEFAULT 0,
   CONSTRAINT pk_accounts_id PRIMARY KEY (id)
 ```
