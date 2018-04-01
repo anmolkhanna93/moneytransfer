@@ -17,6 +17,17 @@ This project consists of two data tables. First is the Accounts table and the Se
 ```
 Here the id represents the cutomers Account id, balance represents current balance in the Account and id acts as the primary key.
 
+Following are the enteries currently in the Accounts table
+
+```
+  id      balance
+  '1'     100
+  '2'     120
+  '3'     700
+  '4'     1000
+```
+
+
 - Transaction Table: I have created this table to keep records of the transactions taking place between the customers. Following is the schema for the table.
 
 ```
@@ -178,7 +189,7 @@ Response:
       }
     ```
 ### Application Walkthrough
-https
+
 ![alt tag](https://github.com/anmolkhanna93/moneytransfer/blob/master/demo.gif)
 
 ### Technologies and Frameworks used
