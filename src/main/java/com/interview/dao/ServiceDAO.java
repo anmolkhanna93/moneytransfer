@@ -7,6 +7,7 @@ import com.interview.model.Account;
 import com.interview.model.TransactionResponse;
 import com.interview.model.Transactions;
 
+import org.hibernate.SessionFactory;
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.sqlobject.Transaction;
@@ -14,6 +15,7 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
 
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -110,18 +112,18 @@ public class ServiceDAO {
 
             if (fromAccount == null) {
                 LOG.error("Account with id: " + fromAccountId + " is Invalid");
-                throw new MoneyManagerException("Invalid Account");
+                throw new MoneyManagerException("Account with id: " + fromAccountId + " is Invalid");
             }
             if (toAccount == null) {
                 LOG.error("Account with id: " + toAccountId + " is Invalid");
-                throw new MoneyManagerException("Invalid Account");
+                throw new MoneyManagerException("Account with id: " + toAccountId + " is Invalid");
             }
 
             fromAccountBalance = fromAccount.getBalance();
             toAccountBalance = toAccount.getBalance();
 
             if (amountToTransfer <= 0) {
-                LOG.error("Cant proceed with transactions from account: " + fromAccountId + " to account: " + toAccountId + "as amount to transfer is 0");
+                LOG.error("Cant proceed with transactions from account: " + fromAccountId + " to account: " + toAccountId + " as amount to transfer is 0");
                 throw new MoneyManagerException("Amount being transferred is not applicable");
             }
 
@@ -131,7 +133,7 @@ public class ServiceDAO {
             }
             if ((fromAccountBalance - amountToTransfer) < 0) {
                 LOG.error("Account with id: " + fromAccountId + " has Insufficient Balance");
-                throw new MoneyManagerException("Insufficient Balance");
+                throw new MoneyManagerException("Account with id: " + fromAccountId + " has Insufficient Balance");
             }
 
             fromAccountBalance = fromAccountBalance - amountToTransfer;

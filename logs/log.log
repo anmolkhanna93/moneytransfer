@@ -391,3 +391,1050 @@ level="INFO" timestamp="2018-04-01 04:34:09,796Z" category="org.eclipse.jetty.se
 level="INFO" timestamp="2018-04-01 04:34:09,797Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
 level="INFO" timestamp="2018-04-01 04:34:09,799Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
 level="INFO" timestamp="2018-04-01 04:34:09,802Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:53:42,168Z" category="org.eclipse.jetty.util.log" Logging initialized @2855ms
+level="INFO" timestamp="2018-04-01 17:53:42,292Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:53:42,293Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:53:42,310Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 17:53:42,622Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:53:42,794Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.061s)
+level="INFO" timestamp="2018-04-01 17:53:42,870Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:53:42,898Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 17:53:42,920Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 17:53:42,985Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 17:53:42,985Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 17:53:43,031Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.113s).
+level="INFO" timestamp="2018-04-01 17:53:43,135Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:53:43,135Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:53:43,137Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 17:53:43,272Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:53:43,273Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:53:43,275Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 17:53:44,074Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 17:53:44,076Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:53:44,081Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 17:53:44,086Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:53:44,098Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:53:44,099Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:53:44,099Z" category="org.eclipse.jetty.server.Server" Started @4787ms
+level="INFO" timestamp="2018-04-01 17:54:08,113Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 17:54:51,089Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:54:51,092Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:54:51,094Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:54:51,106Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:54:55,194Z" category="org.eclipse.jetty.util.log" Logging initialized @2770ms
+level="INFO" timestamp="2018-04-01 17:54:55,291Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:54:55,292Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:54:55,309Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 17:54:55,578Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:54:55,654Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.022s)
+level="INFO" timestamp="2018-04-01 17:54:55,743Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:54:55,766Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 17:54:55,806Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 17:54:55,856Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 17:54:55,856Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 17:54:55,892Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.093s).
+level="INFO" timestamp="2018-04-01 17:54:55,959Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:54:55,960Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:54:55,962Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 17:54:56,199Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:54:56,200Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:54:56,202Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 17:54:57,023Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 17:54:57,025Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:54:57,032Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 17:54:57,039Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:54:57,061Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:54:57,065Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:54:57,066Z" category="org.eclipse.jetty.server.Server" Started @4645ms
+level="INFO" timestamp="2018-04-01 17:55:15,595Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 17:55:23,465Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 17:56:18,236Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:56:18,240Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:56:18,242Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:56:18,251Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:56:22,766Z" category="org.eclipse.jetty.util.log" Logging initialized @3240ms
+level="INFO" timestamp="2018-04-01 17:56:22,912Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:56:22,913Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:56:22,936Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 17:56:23,179Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:56:23,268Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.029s)
+level="INFO" timestamp="2018-04-01 17:56:23,321Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:56:23,340Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 17:56:23,361Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 17:56:23,396Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 17:56:23,397Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 17:56:23,440Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.081s).
+level="INFO" timestamp="2018-04-01 17:56:23,503Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:56:23,503Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:56:23,504Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 17:56:23,626Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:56:23,627Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:56:23,656Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 17:56:24,427Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 17:56:24,429Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:56:24,434Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 17:56:24,441Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:56:24,459Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:56:24,462Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:56:24,464Z" category="org.eclipse.jetty.server.Server" Started @4939ms
+level="INFO" timestamp="2018-04-01 17:57:13,342Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 17:57:22,410Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:57:22,412Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:57:22,413Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:57:22,425Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 17:58:14,740Z" category="org.eclipse.jetty.util.log" Logging initialized @2930ms
+level="INFO" timestamp="2018-04-01 17:58:14,882Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:58:14,882Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:58:14,901Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 17:58:15,139Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:58:15,209Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.026s)
+level="INFO" timestamp="2018-04-01 17:58:15,274Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 17:58:15,295Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 17:58:15,317Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 17:58:15,357Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 17:58:15,357Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 17:58:15,418Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.101s).
+level="INFO" timestamp="2018-04-01 17:58:15,629Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:58:15,630Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 17:58:15,632Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 17:58:15,822Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:58:15,823Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:58:15,848Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 17:58:16,616Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 17:58:16,640Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:58:16,657Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 17:58:16,669Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 17:58:16,688Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 17:58:16,692Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 17:58:16,693Z" category="org.eclipse.jetty.server.Server" Started @4884ms
+level="ERROR" timestamp="2018-04-01 17:58:27,783Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 17:58:28,626Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 17:58:28,685Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 17:58:28,876Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 17:58:28,931Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 17:58:29,022Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 17:58:29,072Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:05:58,447Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:05:58,448Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:05:58,450Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:05:58,461Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:06:05,582Z" category="org.eclipse.jetty.util.log" Logging initialized @3083ms
+level="INFO" timestamp="2018-04-01 18:06:05,804Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:06:05,804Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:06:05,828Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:06:06,258Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:06:06,398Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.044s)
+level="INFO" timestamp="2018-04-01 18:06:06,472Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:06:06,505Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.014s)
+level="INFO" timestamp="2018-04-01 18:06:06,541Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:06:06,633Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:06:06,634Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:06:06,709Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.171s).
+level="INFO" timestamp="2018-04-01 18:06:06,808Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:06:06,809Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:06:06,810Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:06:07,193Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:06:07,196Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:06:07,208Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:06:08,366Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:06:08,377Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:06:08,390Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:06:08,400Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:06:08,427Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:06:08,430Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:06:08,431Z" category="org.eclipse.jetty.server.Server" Started @5935ms
+level="INFO" timestamp="2018-04-01 18:09:18,678Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:09:18,680Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:09:18,681Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:09:18,701Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:09:23,327Z" category="org.eclipse.jetty.util.log" Logging initialized @3354ms
+level="INFO" timestamp="2018-04-01 18:09:23,430Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:09:23,430Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:09:23,445Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:09:23,680Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:09:23,749Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.025s)
+level="INFO" timestamp="2018-04-01 18:09:23,806Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:09:23,825Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 18:09:23,847Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:09:23,891Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:09:23,891Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:09:23,935Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.090s).
+level="INFO" timestamp="2018-04-01 18:09:24,005Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:09:24,005Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:09:24,007Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:09:24,161Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:09:24,162Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:09:24,168Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:09:24,963Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:09:24,970Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:09:24,977Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:09:24,983Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:09:24,999Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:09:25,001Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:09:25,002Z" category="org.eclipse.jetty.server.Server" Started @5029ms
+level="ERROR" timestamp="2018-04-01 18:09:40,053Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:09:41,004Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:09:41,068Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 18:09:41,226Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:09:41,285Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:09:41,375Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 18:09:41,430Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:11:01,125Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:11:01,131Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:11:01,133Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:11:01,139Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:11:05,566Z" category="org.eclipse.jetty.util.log" Logging initialized @3670ms
+level="INFO" timestamp="2018-04-01 18:11:05,747Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:11:05,747Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:11:05,766Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:11:06,006Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:11:06,072Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.022s)
+level="INFO" timestamp="2018-04-01 18:11:06,157Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:11:06,193Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.017s)
+level="INFO" timestamp="2018-04-01 18:11:06,238Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:11:06,274Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:11:06,274Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:11:06,333Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.099s).
+level="INFO" timestamp="2018-04-01 18:11:06,419Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:11:06,419Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:11:06,421Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:11:06,573Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:11:06,574Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:11:06,577Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:11:07,357Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:11:07,360Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:11:07,365Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:11:07,373Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:11:07,384Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:11:07,387Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:11:07,387Z" category="org.eclipse.jetty.server.Server" Started @5491ms
+level="ERROR" timestamp="2018-04-01 18:11:17,013Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:11:17,949Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:11:18,012Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 18:11:18,121Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:11:18,199Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:11:18,274Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 18:11:18,323Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:11:23,063Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:11:23,066Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:11:23,069Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:11:23,077Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:22:23,286Z" category="org.eclipse.jetty.util.log" Logging initialized @3136ms
+level="INFO" timestamp="2018-04-01 18:22:23,390Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:22:23,390Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:22:23,404Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:22:23,625Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:22:23,699Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.025s)
+level="INFO" timestamp="2018-04-01 18:22:23,766Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:22:23,798Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.017s)
+level="INFO" timestamp="2018-04-01 18:22:23,846Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:22:23,888Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:22:23,888Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:22:23,948Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.121s).
+level="INFO" timestamp="2018-04-01 18:22:24,035Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:22:24,035Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:22:24,037Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:22:24,191Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:22:24,192Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:22:24,197Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:22:25,042Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:22:25,045Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:22:25,051Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:22:25,066Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:22:25,082Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:22:25,084Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:22:25,085Z" category="org.eclipse.jetty.server.Server" Started @4937ms
+level="ERROR" timestamp="2018-04-01 18:22:48,561Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:22:49,635Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:22:49,711Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 18:22:49,912Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:22:49,976Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:22:50,081Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 18:22:50,145Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:23:19,562Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:23:19,565Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:23:19,567Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:23:19,579Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:23:25,532Z" category="org.eclipse.jetty.util.log" Logging initialized @2741ms
+level="INFO" timestamp="2018-04-01 18:23:25,632Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:23:25,633Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:23:25,646Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:23:25,858Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:23:25,934Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.023s)
+level="INFO" timestamp="2018-04-01 18:23:26,033Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:23:26,064Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.020s)
+level="INFO" timestamp="2018-04-01 18:23:26,114Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:23:26,153Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:23:26,153Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:23:26,191Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.080s).
+level="INFO" timestamp="2018-04-01 18:23:26,260Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:23:26,260Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:23:26,263Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:23:26,410Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:23:26,411Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:23:26,414Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:23:27,061Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:23:27,063Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:23:27,069Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:23:27,074Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:23:27,086Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:23:27,087Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:23:27,087Z" category="org.eclipse.jetty.server.Server" Started @4297ms
+level="ERROR" timestamp="2018-04-01 18:23:37,037Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:23:38,046Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:23:38,125Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 18:23:38,242Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:23:38,324Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:23:38,509Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 18:23:38,631Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:24:06,627Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:24:06,628Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:24:06,630Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:24:06,634Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:24:12,332Z" category="org.eclipse.jetty.util.log" Logging initialized @2538ms
+level="INFO" timestamp="2018-04-01 18:24:12,435Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:24:12,436Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:24:12,469Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:24:12,702Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:24:12,785Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.027s)
+level="INFO" timestamp="2018-04-01 18:24:12,838Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:24:12,857Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 18:24:12,881Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:24:12,918Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:24:12,919Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:24:12,965Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.086s).
+level="INFO" timestamp="2018-04-01 18:24:13,038Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:24:13,038Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:24:13,040Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:24:13,196Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:24:13,197Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:24:13,202Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:24:13,921Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:24:13,923Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:24:13,930Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:24:13,936Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:24:13,954Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:24:13,958Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:24:13,958Z" category="org.eclipse.jetty.server.Server" Started @4166ms
+level="ERROR" timestamp="2018-04-01 18:24:23,158Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:24:23,981Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 18:24:24,041Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 18:24:24,136Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:24:24,198Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:24:24,284Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 18:24:24,327Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:24:52,193Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:24:56,688Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:24:58,308Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:24:59,213Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:25:00,187Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:25:02,051Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:25:02,860Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 18:25:03,515Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="ERROR" timestamp="2018-04-01 18:25:07,750Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 18:25:48,576Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:25:48,577Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:25:48,578Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:25:48,582Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:25:52,513Z" category="org.eclipse.jetty.util.log" Logging initialized @3346ms
+level="INFO" timestamp="2018-04-01 18:25:52,660Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:25:52,661Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:25:52,682Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 18:25:52,911Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:25:52,985Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.024s)
+level="INFO" timestamp="2018-04-01 18:25:53,035Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 18:25:53,058Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.011s)
+level="INFO" timestamp="2018-04-01 18:25:53,092Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 18:25:53,137Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 18:25:53,142Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 18:25:53,199Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.110s).
+level="INFO" timestamp="2018-04-01 18:25:53,277Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:25:53,277Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 18:25:53,279Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 18:25:53,456Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:25:53,458Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:25:53,461Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 18:25:54,201Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 18:25:54,203Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4110765e{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:25:54,208Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 18:25:54,213Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7a729f84{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 18:25:54,227Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:25:54,230Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:25:54,231Z" category="org.eclipse.jetty.server.Server" Started @5066ms
+level="INFO" timestamp="2018-04-01 18:26:10,904Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:26:19,220Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 18:26:41,680Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1d01dfa5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 18:26:41,681Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@4a31c2ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 18:26:41,682Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7a729f84{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 18:26:41,691Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4110765e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 21:22:39,538Z" category="org.eclipse.jetty.util.log" Logging initialized @2640ms
+level="INFO" timestamp="2018-04-01 21:22:39,669Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:22:39,669Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:22:39,686Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="ERROR" timestamp="2018-04-01 21:22:39,801Z" category="org.apache.tomcat.jdbc.pool.ConnectionPool" Unable to create initial connections of pool.
+! org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+! at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+! at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+! at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:216)
+! at org.postgresql.Driver.makeConnection(Driver.java:404)
+! at org.postgresql.Driver.connect(Driver.java:272)
+! at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+! at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+! at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:717)
+! at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:649)
+! at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:468)
+! at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:143)
+! at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+! at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+! at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+! at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50)
+! at org.flywaydb.core.Flyway.execute(Flyway.java:1326)
+! at org.flywaydb.core.Flyway.clean(Flyway.java:1021)
+! at com.interview.ServiceApplication.run(ServiceApplication.java:46)
+! at com.interview.ServiceApplication.run(ServiceApplication.java:21)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:79)
+! at com.interview.ServiceApplication.main(ServiceApplication.java:23)
+! Caused by: java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+! at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+! ... 23 common frames omitted
+level="INFO" timestamp="2018-04-01 21:29:23,789Z" category="org.eclipse.jetty.util.log" Logging initialized @2920ms
+level="INFO" timestamp="2018-04-01 21:29:23,920Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:23,921Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:23,939Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 21:29:24,230Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 21:29:24,396Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.065s)
+level="INFO" timestamp="2018-04-01 21:29:24,455Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 21:29:24,475Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 21:29:24,497Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 21:29:24,578Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 21:29:24,579Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 21:29:24,621Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.127s).
+level="INFO" timestamp="2018-04-01 21:29:24,702Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:24,703Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:24,707Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 21:29:24,857Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:24,857Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:24,859Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 21:29:25,676Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 21:29:25,677Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:25,683Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 21:29:25,689Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:25,702Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:25,703Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:25,703Z" category="org.eclipse.jetty.server.Server" Started @4835ms
+level="ERROR" timestamp="2018-04-01 21:29:36,902Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 21:29:37,710Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 21:29:37,772Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 21:29:37,870Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 21:29:37,915Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 21:29:37,995Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 21:29:38,036Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 21:29:41,434Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:41,435Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:41,437Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:41,444Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:46,129Z" category="org.eclipse.jetty.util.log" Logging initialized @3518ms
+level="INFO" timestamp="2018-04-01 21:29:46,265Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:46,265Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:46,286Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 21:29:46,518Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 21:29:46,592Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.023s)
+level="INFO" timestamp="2018-04-01 21:29:46,693Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 21:29:46,718Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 21:29:46,748Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 21:29:46,791Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 21:29:46,792Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 21:29:46,838Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.092s).
+level="INFO" timestamp="2018-04-01 21:29:46,905Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:46,905Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 21:29:46,908Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 21:29:47,063Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:47,063Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:47,065Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 21:29:47,709Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 21:29:47,711Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:47,717Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 21:29:47,724Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:47,739Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:47,740Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:47,745Z" category="org.eclipse.jetty.server.Server" Started @5132ms
+level="INFO" timestamp="2018-04-01 21:29:49,958Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 21:29:49,960Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 21:29:49,961Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 21:29:49,980Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 22:04:30,180Z" category="org.eclipse.jetty.util.log" Logging initialized @2453ms
+level="INFO" timestamp="2018-04-01 22:04:30,367Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:04:30,368Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:04:30,400Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 22:04:30,671Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 22:04:30,736Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.021s)
+level="INFO" timestamp="2018-04-01 22:04:30,805Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 22:04:30,845Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.022s)
+level="INFO" timestamp="2018-04-01 22:04:30,889Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 22:04:30,942Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 22:04:30,942Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 22:04:30,988Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.104s).
+level="INFO" timestamp="2018-04-01 22:04:31,062Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:04:31,062Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:04:31,064Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 22:04:31,187Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:04:31,188Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:04:31,190Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 22:04:31,910Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 22:04:31,911Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 22:04:31,917Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 22:04:31,922Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 22:04:31,934Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:04:31,935Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:04:31,936Z" category="org.eclipse.jetty.server.Server" Started @4210ms
+level="ERROR" timestamp="2018-04-01 22:04:43,316Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 22:04:44,073Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 22:04:44,131Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 22:04:44,232Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:04:44,280Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 22:04:44,382Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 22:04:44,434Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 22:05:00,395Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:05:00,396Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:05:00,398Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 22:05:00,402Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 22:05:04,486Z" category="org.eclipse.jetty.util.log" Logging initialized @2837ms
+level="INFO" timestamp="2018-04-01 22:05:04,575Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:05:04,575Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:05:04,587Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 22:05:04,822Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 22:05:04,896Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.026s)
+level="INFO" timestamp="2018-04-01 22:05:04,955Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 22:05:04,976Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.011s)
+level="INFO" timestamp="2018-04-01 22:05:05,024Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 22:05:05,077Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 22:05:05,077Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 22:05:05,127Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.110s).
+level="INFO" timestamp="2018-04-01 22:05:05,189Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:05:05,189Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 22:05:05,191Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 22:05:05,314Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:05:05,315Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:05:05,320Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 22:05:06,011Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 22:05:06,013Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 22:05:06,018Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 22:05:06,024Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 22:05:06,043Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:05:06,045Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:05:06,046Z" category="org.eclipse.jetty.server.Server" Started @4398ms
+level="INFO" timestamp="2018-04-01 22:05:12,107Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:20,578Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:21,260Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:21,858Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:22,626Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:23,346Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:23,924Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:24,595Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:25,259Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 22:05:25,897Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 22:05:28,581Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 22:05:42,317Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 22:05:42,320Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 22:05:42,321Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 22:05:42,325Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:11:58,174Z" category="org.eclipse.jetty.util.log" Logging initialized @2392ms
+level="INFO" timestamp="2018-04-01 23:11:58,341Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:11:58,341Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:11:58,359Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:11:58,606Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:11:58,666Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.019s)
+level="INFO" timestamp="2018-04-01 23:11:58,721Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:11:58,745Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 23:11:58,768Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:11:58,809Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:11:58,810Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:11:58,848Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.082s).
+level="INFO" timestamp="2018-04-01 23:11:58,921Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:11:58,921Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:11:58,923Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:11:59,038Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:11:59,039Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:11:59,042Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:11:59,772Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:11:59,773Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:11:59,779Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:11:59,784Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:11:59,796Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:11:59,797Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:11:59,798Z" category="org.eclipse.jetty.server.Server" Started @4017ms
+level="ERROR" timestamp="2018-04-01 23:12:17,370Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 23:15:04,679Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 23:15:47,763Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:15:47,764Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:15:47,766Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:15:47,769Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:15:53,205Z" category="org.eclipse.jetty.util.log" Logging initialized @2983ms
+level="INFO" timestamp="2018-04-01 23:15:53,313Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:15:53,313Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:15:53,326Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:15:53,527Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:15:53,604Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.024s)
+level="INFO" timestamp="2018-04-01 23:15:53,652Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:15:53,673Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.011s)
+level="INFO" timestamp="2018-04-01 23:15:53,695Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:15:53,732Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:15:53,732Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:15:53,778Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.085s).
+level="INFO" timestamp="2018-04-01 23:15:53,850Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:15:53,851Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:15:53,853Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:15:54,028Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:15:54,028Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:15:54,032Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:15:55,028Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:15:55,030Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:15:55,037Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:15:55,045Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:15:55,060Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:15:55,064Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:15:55,064Z" category="org.eclipse.jetty.server.Server" Started @4844ms
+level="ERROR" timestamp="2018-04-01 23:15:58,401Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="ERROR" timestamp="2018-04-01 23:16:15,634Z" category="com.interview.dao.ServiceDAO" Account with id: 21 is Invalid
+level="INFO" timestamp="2018-04-01 23:16:42,962Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:16:42,964Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:16:42,966Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:16:42,978Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:16:48,278Z" category="org.eclipse.jetty.util.log" Logging initialized @2742ms
+level="INFO" timestamp="2018-04-01 23:16:48,396Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:16:48,396Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:16:48,414Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:16:48,720Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:16:48,805Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.035s)
+level="INFO" timestamp="2018-04-01 23:16:48,858Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:16:48,880Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.010s)
+level="INFO" timestamp="2018-04-01 23:16:48,910Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:16:48,948Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:16:48,949Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:16:48,997Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.090s).
+level="INFO" timestamp="2018-04-01 23:16:49,076Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:16:49,076Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:16:49,079Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:16:49,190Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:16:49,191Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:16:49,192Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:16:49,931Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:16:49,932Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:16:49,939Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:16:49,945Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:16:49,957Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:16:49,958Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:16:49,959Z" category="org.eclipse.jetty.server.Server" Started @4424ms
+level="ERROR" timestamp="2018-04-01 23:16:55,997Z" category="com.interview.dao.ServiceDAO" Account with id: 21 is Invalid
+level="INFO" timestamp="2018-04-01 23:17:46,907Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:17:46,909Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:17:46,911Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:17:46,916Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:17:52,749Z" category="org.eclipse.jetty.util.log" Logging initialized @2640ms
+level="INFO" timestamp="2018-04-01 23:17:52,838Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:17:52,838Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:17:52,853Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:17:53,091Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:17:53,162Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.025s)
+level="INFO" timestamp="2018-04-01 23:17:53,214Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:17:53,236Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 23:17:53,277Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:17:53,330Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:17:53,330Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:17:53,384Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.114s).
+level="INFO" timestamp="2018-04-01 23:17:53,461Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:17:53,461Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:17:53,463Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:17:53,582Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:17:53,582Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:17:53,584Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:17:54,303Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:17:54,305Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:17:54,312Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:17:54,319Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:17:54,333Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:17:54,334Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:17:54,334Z" category="org.eclipse.jetty.server.Server" Started @4226ms
+level="ERROR" timestamp="2018-04-01 23:18:03,594Z" category="com.interview.dao.ServiceDAO" Account with id: 20 is Invalid
+level="ERROR" timestamp="2018-04-01 23:19:33,846Z" category="com.interview.dao.ServiceDAO" Account with id: 20 is Invalid
+level="ERROR" timestamp="2018-04-01 23:19:38,907Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 23:21:25,201Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 23:22:16,046Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:22:16,048Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:22:16,049Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:22:16,053Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:22:23,596Z" category="org.eclipse.jetty.util.log" Logging initialized @2504ms
+level="INFO" timestamp="2018-04-01 23:22:23,703Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:22:23,704Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:22:23,716Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:22:23,938Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:22:24,010Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.024s)
+level="INFO" timestamp="2018-04-01 23:22:24,058Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:22:24,086Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.015s)
+level="INFO" timestamp="2018-04-01 23:22:24,109Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:22:24,143Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:22:24,143Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:22:24,186Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.080s).
+level="INFO" timestamp="2018-04-01 23:22:24,263Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:22:24,263Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:22:24,266Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:22:24,404Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:22:24,405Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:22:24,409Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:22:25,172Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:22:25,174Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:22:25,181Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:22:25,188Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:22:25,209Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:22:25,214Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:22:25,215Z" category="org.eclipse.jetty.server.Server" Started @4124ms
+level="ERROR" timestamp="2018-04-01 23:22:32,983Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 23:22:33,903Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 23:22:33,960Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 23:22:34,086Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 23:22:34,139Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 23:22:34,247Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 23:22:34,306Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="ERROR" timestamp="2018-04-01 23:24:37,498Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 23:25:08,095Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:25:08,096Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:25:08,097Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:25:08,101Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:25:13,065Z" category="org.eclipse.jetty.util.log" Logging initialized @2475ms
+level="INFO" timestamp="2018-04-01 23:25:13,177Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:25:13,177Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:25:13,190Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:25:13,427Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:25:13,504Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.028s)
+level="INFO" timestamp="2018-04-01 23:25:13,581Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:25:13,606Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.014s)
+level="INFO" timestamp="2018-04-01 23:25:13,634Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:25:13,677Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:25:13,677Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:25:13,717Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.087s).
+level="INFO" timestamp="2018-04-01 23:25:13,780Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:25:13,780Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:25:13,783Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:25:13,927Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:25:13,927Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:25:13,929Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:25:14,640Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:25:14,642Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:25:14,650Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:25:14,657Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:25:14,677Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:25:14,682Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:25:14,683Z" category="org.eclipse.jetty.server.Server" Started @4094ms
+level="ERROR" timestamp="2018-04-01 23:25:22,816Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 23:25:23,599Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="ERROR" timestamp="2018-04-01 23:25:23,647Z" category="com.interview.dao.ServiceDAO" Account with id: 6 is Invalid
+level="INFO" timestamp="2018-04-01 23:25:23,730Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 23:25:23,772Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 23:25:23,853Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 23:25:23,887Z" category="com.interview.dao.ServiceDAO" Account with id: 2 has Insufficient Balance
+level="INFO" timestamp="2018-04-01 23:27:10,292Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 23:27:21,953Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:27:21,954Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:27:21,955Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:27:21,958Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:27:25,778Z" category="org.eclipse.jetty.util.log" Logging initialized @2691ms
+level="INFO" timestamp="2018-04-01 23:27:25,877Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:27:25,877Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:27:25,890Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:27:26,111Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:27:26,199Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.029s)
+level="INFO" timestamp="2018-04-01 23:27:26,264Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:27:26,289Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.012s)
+level="INFO" timestamp="2018-04-01 23:27:26,330Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:27:26,374Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:27:26,374Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:27:26,461Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.133s).
+level="INFO" timestamp="2018-04-01 23:27:26,590Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:27:26,590Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:27:26,592Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:27:26,717Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:27:26,718Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:27:26,719Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:27:27,500Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:27:27,502Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:27:27,509Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:27:27,516Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:27:27,535Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:27:27,542Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:27:27,543Z" category="org.eclipse.jetty.server.Server" Started @4457ms
+level="INFO" timestamp="2018-04-01 23:27:33,436Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="INFO" timestamp="2018-04-01 23:45:04,546Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:45:04,548Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:45:04,549Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@261ea657{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:45:04,552Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@78d6447a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2018-04-01 23:45:08,566Z" category="org.eclipse.jetty.util.log" Logging initialized @2737ms
+level="INFO" timestamp="2018-04-01 23:45:08,654Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:45:08,655Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:45:08,666Z" category="org.flywaydb.core.internal.util.VersionPrinter" Flyway 4.0.3 by Boxfuse
+level="INFO" timestamp="2018-04-01 23:45:08,898Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:45:08,965Z" category="org.flywaydb.core.internal.command.DbClean" Successfully cleaned schema "public" (execution time 00:00.023s)
+level="INFO" timestamp="2018-04-01 23:45:09,017Z" category="org.flywaydb.core.internal.dbsupport.DbSupportFactory" Database: jdbc:postgresql://localhost:5432/circle (PostgreSQL 10.3)
+level="INFO" timestamp="2018-04-01 23:45:09,040Z" category="org.flywaydb.core.internal.command.DbValidate" Successfully validated 1 migration (execution time 00:00.011s)
+level="INFO" timestamp="2018-04-01 23:45:09,063Z" category="org.flywaydb.core.internal.metadatatable.MetaDataTableImpl" Creating Metadata table: "public"."schema_version"
+level="INFO" timestamp="2018-04-01 23:45:09,100Z" category="org.flywaydb.core.internal.command.DbMigrate" Current version of schema "public": << Empty Schema >>
+level="INFO" timestamp="2018-04-01 23:45:09,100Z" category="org.flywaydb.core.internal.command.DbMigrate" Migrating schema "public" to version 1 - Accounts
+level="INFO" timestamp="2018-04-01 23:45:09,146Z" category="org.flywaydb.core.internal.command.DbMigrate" Successfully applied 1 migration to schema "public" (execution time 00:00.085s).
+level="INFO" timestamp="2018-04-01 23:45:09,223Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:45:09,223Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2018-04-01 23:45:09,226Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2018-04-01 23:45:09,340Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:45:09,341Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:45:09,342Z" category="org.eclipse.jetty.server.Server" jetty-9.3.9.v20160517
+level="INFO" timestamp="2018-04-01 23:45:09,972Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    GET     /api/accounts (com.interview.service.ServiceResource)
+    GET     /api/accounts/{id} (com.interview.service.ServiceResource)
+    GET     /api/ping (com.interview.service.ServiceResource)
+    POST    /api/transfer (com.interview.service.ServiceResource)
+
+level="INFO" timestamp="2018-04-01 23:45:09,973Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@78d6447a{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:45:09,979Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="INFO" timestamp="2018-04-01 23:45:09,983Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@261ea657{/,null,AVAILABLE}
+level="INFO" timestamp="2018-04-01 23:45:09,997Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@796d3c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2018-04-01 23:45:09,999Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@6bff19ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2018-04-01 23:45:10,001Z" category="org.eclipse.jetty.server.Server" Started @4173ms
+level="INFO" timestamp="2018-04-01 23:47:43,030Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful
+level="ERROR" timestamp="2018-04-01 23:47:53,410Z" category="com.interview.dao.ServiceDAO" Account with id: 1 has Insufficient Balance
+level="ERROR" timestamp="2018-04-01 23:48:02,383Z" category="com.interview.dao.ServiceDAO" Account with id: 9 is Invalid
+level="ERROR" timestamp="2018-04-01 23:48:12,311Z" category="com.interview.dao.ServiceDAO" Trying to transfer between same accounts
+level="ERROR" timestamp="2018-04-01 23:48:23,998Z" category="com.interview.dao.ServiceDAO" Cant proceed with transactions from account: 1 to account: 2 as amount to transfer is 0
+level="INFO" timestamp="2018-04-01 23:48:42,635Z" category="com.interview.dao.ServiceDAO" Transactions from account: 1 to: 2 is successful

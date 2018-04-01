@@ -6,6 +6,7 @@ import com.interview.model.Transactions;
 import static com.jayway.restassured.RestAssured.given;
 
 import com.jayway.restassured.RestAssured;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -91,8 +92,8 @@ public class ServiceDAOTest {
         given().contentType("application/json")
                 .body(successfullTransactions)
                 .when().post("/transfer").then()
-                .body("transactionId",equalTo(2));
-                //.body("balance", CoreMatchers.equalTo(80.0));
+                .body("transactionId",equalTo(2))
+                .body("balance", equalTo(80.0f));
     }
 
     @Test
@@ -110,7 +111,7 @@ public class ServiceDAOTest {
         given().contentType("application/json")
                 .body(verifyInvalidAccountTransactions)
                 .when().post("/transfer").then()
-                .body("errorMessage",equalTo("Invalid Account"));
+                .body("errorMessage",equalTo("Account with id: 6 is Invalid"));
     }
 
     @Test
@@ -137,6 +138,6 @@ public class ServiceDAOTest {
         given().contentType("application/json")
                 .body(insufficientBalanceTransactions)
                 .when().post("/transfer").then()
-                .body("errorMessage",equalTo("Insufficient Balance"));
+                .body("errorMessage",equalTo("Account with id: 2 has Insufficient Balance"));
     }
 }
