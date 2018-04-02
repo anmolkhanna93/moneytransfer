@@ -215,7 +215,8 @@ Response:
       
 ### Application Walkthrough
 
-![alt tag](https://github.com/anmolkhanna93/moneytransfer/blob/master/demo.gif)
+![alt tag](https://github.com/anmolkhanna93/moneytransfer/blob/master/demo.mov)
+
 
 ### Technologies and Frameworks used
 
