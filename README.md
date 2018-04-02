@@ -167,6 +167,7 @@ Response:
 - Then do mvn clean build to build the project.
 - Run the project. If the project doesnt run, you will have to edit the run configuration in your editor by selecting the application configuration and setting the Proagram Arguments as "server configuration.yml"
 - Once the server starts, you can headover to your browser or play with the API endpoint in Postman
+- To run the tests, you need to start the server by running the Server Application
 - 1. To access all the accounts in the accounts table,
      http://localhost:8080/api/accounts
   2. To access an account by its account id,
@@ -188,6 +189,7 @@ Response:
           "amountToTransfer": 10.0
       }
     ```
+   
 ### Application Walkthrough
 
 ![alt tag](https://github.com/anmolkhanna93/moneytransfer/blob/master/demo.gif)
