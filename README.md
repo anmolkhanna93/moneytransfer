@@ -44,9 +44,9 @@ Changes made to the tables,
 - In the Accounts table, I have changed the data type of the balance feild to double
 - I have added the transactions table to keep record of the transactions
 
-### Use cases Covered 
+### Scenarios Covered 
 
-Transaction between the two accounts will be unsuccessful in the following use cases :
+The following scenarios will send an error message to the client and result in unsuccessful transaction.
 
 - If both the fromAccountId and toAccountId entered are same
 - If one of the accounts entered is incorrect, i.e its not present in the Accounts table
@@ -94,7 +94,7 @@ Response:
 ```
 {
   "errorCode": 400,
-  "errorMessage": "Cannot proceed, transactions happening between same accounts"
+  "errorMessage": "Cannot proceed, Invalid account id entered"
 }
 ```
 
