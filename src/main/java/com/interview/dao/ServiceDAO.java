@@ -15,7 +15,6 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-
 import javax.ws.rs.core.Response;
 import java.util.List;
 
@@ -140,11 +139,9 @@ public class ServiceDAO {
             transactionResponse = new TransactionResponse(transactions.getId(), fromAccountBalance);
 
             LOG.info("Transactions from account: " + fromAccountId + " to: " + toAccountId + " is successful");
-
         } catch (MoneyManagerException exception) {
             throw exception;
         }
-
         return Response.status(Response.Status.OK).entity(transactionResponse).build();
     }
 }
