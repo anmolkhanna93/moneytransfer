@@ -7,7 +7,6 @@ import com.interview.model.Account;
 import com.interview.model.TransactionResponse;
 import com.interview.model.Transactions;
 
-import org.hibernate.SessionFactory;
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.sqlobject.Transaction;
@@ -20,10 +19,6 @@ import org.apache.commons.logging.LogFactory;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-/**
- * http://www.dropwizard.io/1.0.6/docs/manual/jdbi.html
- * http://jdbi.org/dbi_handle_and_statement/
- */
 @RegisterMapper({AccountResultMapper.class,TransactionResultMapper.class})
 public class ServiceDAO {
 
@@ -38,9 +33,9 @@ public class ServiceDAO {
         this.dbi = dbi;
     }
 
-
     public List<Account> getAllAccounts() {
         Handle h  = dbi.open();
+
         try{
             return h.createQuery("SELECT * FROM accounts;")
                     .mapTo(Account.class)
@@ -52,6 +47,7 @@ public class ServiceDAO {
 
     public Account getAccount(String id) {
         Handle h = dbi.open();
+
         try{
             return h.createQuery("SELECT * FROM accounts " +
                                 " WHERE id=:id;")
@@ -65,10 +61,9 @@ public class ServiceDAO {
 
     public void updateAccount(String id,double balance){
         Handle h = dbi.open();
-        try{
-           // h.execute("UPDATE accounts SET balance=? WHERE id=?", balance.intValue(), id);
-            h.execute("UPDATE accounts SET balance=? WHERE id=?", balance, id);
 
+        try{
+            h.execute("UPDATE accounts SET balance=? WHERE id=?", balance, id);
         }finally {
             h.close();
         }
@@ -86,7 +81,6 @@ public class ServiceDAO {
         }finally {
             h.close();
         }
-
     }
 
     @Transaction
@@ -138,18 +132,19 @@ public class ServiceDAO {
 
             fromAccountBalance = fromAccountBalance - amountToTransfer;
             toAccountBalance = toAccountBalance + amountToTransfer;
+
             updateAccount(fromAccountId, fromAccountBalance);
             updateAccount(toAccountId, toAccountBalance);
+
             transactions = insertTransaction(transactions);
             transactionResponse = new TransactionResponse(transactions.getId(), fromAccountBalance);
-            LOG.info("Transactions from account: " + fromAccountId + " to: " + toAccountId + " is successful");
 
+            LOG.info("Transactions from account: " + fromAccountId + " to: " + toAccountId + " is successful");
 
         } catch (MoneyManagerException exception) {
             throw exception;
         }
+
         return Response.status(Response.Status.OK).entity(transactionResponse).build();
-        //return TransactionResponse.status(TransactionResponse.Status.BAD_REQUEST).entity(transactions).build();
-        // return new TransactionResponse(transactions.getId(),200,fromAccountBalance);
     }
 }

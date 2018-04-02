@@ -11,7 +11,6 @@ public class TransactionResponse {
         this.balance = balance;
     }
 
-
     public Integer getTransactionId() {
         return transactionId;
     }

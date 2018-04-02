@@ -53,5 +53,4 @@ public class Transactions {
     public void setAmountToTransfer(Double amountToTransfer) {
         this.amountToTransfer = amountToTransfer;
     }
-
 }

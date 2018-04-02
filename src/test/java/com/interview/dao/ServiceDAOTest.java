@@ -1,6 +1,5 @@
 package com.interview.dao;
 
-import com.interview.model.Account;
 import com.interview.model.Transactions;
 
 import static com.jayway.restassured.RestAssured.given;
@@ -9,24 +8,19 @@ import com.jayway.restassured.RestAssured;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.HashSet;
-import java.util.Set;
+import org.mockito.Mockito;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class ServiceDAOTest {
 
-    Set<Account> accountSet;
-    Account account1,account2,account3;
     Transactions sameAccounts;
     Transactions successfullTransactions;
     Transactions insufficientBalanceTransactions;
     Transactions verifyInvalidAccountTransactions;
 
     private ServiceDAO dao;
-
 
     @Before
     public void setUp() throws Exception {
@@ -35,20 +29,12 @@ public class ServiceDAOTest {
         RestAssured.baseURI = "http://localhost";
         RestAssured.basePath = "/api/";
 
-        dao = new ServiceDAO();
-        accountSet = new HashSet<>();
-        account1 = new Account("1",100.0);
-        account2 = new Account("2",120.0);
-        account3 = new Account("3",700.0);
-        accountSet.add(account1);
-        accountSet.add(account2);
-        accountSet.add(account3);
+        dao = Mockito.mock(ServiceDAO.class);
+
         sameAccounts = new Transactions("1","1",10.0);
         successfullTransactions = new Transactions("1","2",10.0);
         insufficientBalanceTransactions = new Transactions("2","3",1000.0);
         verifyInvalidAccountTransactions = new Transactions("6","1",100.0);
-
-
     }
 
     @Test

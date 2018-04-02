@@ -6,6 +6,7 @@ import com.interview.mappers.MoneyManagerExceptionMapper;
 import com.interview.mappers.TransactionResultMapper;
 import com.interview.service.ServiceResource;
 import com.interview.utils.ServiceConfiguration;
+
 import io.dropwizard.Application;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.flyway.FlywayBundle;
@@ -13,11 +14,9 @@ import io.dropwizard.flyway.FlywayFactory;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+
 import org.skife.jdbi.v2.DBI;
 
-/**
- * http://www.dropwizard.io/1.0.6/docs/manual/core.html#application
- */
 public class ServiceApplication extends Application<ServiceConfiguration> {
     public static void main(String[] args) throws Exception {
         new ServiceApplication().run(args);

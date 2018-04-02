@@ -11,7 +11,7 @@ import javax.ws.rs.ext.Provider;
 public class MoneyManagerExceptionMapper implements ExceptionMapper<MoneyManagerException> {
 
     public MoneyManagerExceptionMapper() {
-        System.out.println("Mapper created money manager");
+        super();
     }
 
     @Override

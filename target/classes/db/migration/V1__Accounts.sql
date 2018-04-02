@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS accounts
   CONSTRAINT pk_accounts_id PRIMARY KEY (id)
 );
 
-
 INSERT INTO accounts
 (id, balance)
 VALUES
@@ -13,7 +12,6 @@ VALUES
 ('2', 120),
 ('3', 700),
 ('4', 1000);
-
 
 CREATE TABLE IF NOT EXISTS transactions
 (

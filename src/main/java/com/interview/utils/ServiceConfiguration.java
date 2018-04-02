@@ -8,9 +8,6 @@ import io.dropwizard.flyway.FlywayFactory;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
-/**
- * http://www.dropwizard.io/1.0.6/docs/manual/core.html#configuration
- */
 public class ServiceConfiguration extends Configuration {
     @Valid
     @NotNull
