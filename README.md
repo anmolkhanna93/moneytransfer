@@ -1,8 +1,8 @@
 # moneytransfer
 
-### Introduction
+### Objective
 
-This a project for Circle Interview Process. In this project, I have create a rest API for supporting the transfer amount functionality. The API allows to transfer amount from one account to another account, Say from Account A to Account B.
+In this project, I have created a rest API for supporting the transfer amount functionality. The API allows to transfer amount from one account to another account, Say from Account A to Account B.
 
 ### Data Models
 
@@ -39,16 +39,39 @@ Following are the enteries currently in the Accounts table
 ```
 Here the id is the transaction id, fromAccountId represents the account that initiates the transaction, toAccountId represents the account to which money is being transferred and amountToTransfer is the amount that was transfered between the accounts. This transaction table is updated only for the successful transactions.
 
-### Usecases Covered 
+Changes made to the tables,
 
-Transaction between the two accounts will be unsuccessful in the following Usecases :
+- In the Accounts table, I have changed the data type of the balance feild to double
+- I have added the transactions table to keep record of the transactions
+
+### Use cases Covered 
+
+Transaction between the two accounts will be unsuccessful in the following use cases :
 
 - If both the fromAccountId and toAccountId entered are same
 - If one of the accounts entered is incorrect, i.e its not present in the Accounts table
 - If the amountToTransfer entered is less than equal to zero
 - If balance in the account with fromAccountId has zero or insufficient balance
 
-If we meet any of the above mentioned usecases then the transaction wont be successful otherwise it will be successful.
+If we meet any of the above mentioned use cases then the transaction wont be successful otherwise it will be successful.
+
+- If we need to support the functionality of transferring amount between accounts supporting different currencies, then we will need to make following changes to our Accounts table.
+
+```
+  id        TEXT UNIQUE NOT NULL,
+  CurrencyCode TEXT,
+  balance   DECIMAL(18,2) NOT NULL DEFAULT 0,
+  CONSTRAINT pk_accounts_id PRIMARY KEY (id)
+```
+Also, we will need to maintain a seaprate table say CurrencyConversion table that gives us the currency converion rate between the two currencies. The table will look something like this,
+
+```
+  fromCurrencyCode     TEXT UNIQUE NOT NULL,
+  toCurrencyCode       TEXT,
+  conversionRate       DECIMAL(18,2) NOT NULL DEFAULT 0,
+```
+
+This CurrencyConversion table will need to support faster insertions as the conversionRate is a dynamic propety that changes on a daily basis.
 
 ### TestCases Demo
 
@@ -189,7 +212,7 @@ Response:
           "amountToTransfer": 10.0
       }
       ```
-   
+      
 ### Application Walkthrough
 
 ![alt tag](https://github.com/anmolkhanna93/moneytransfer/blob/master/demo.gif)
