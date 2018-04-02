@@ -182,13 +182,13 @@ Response:
      
      Then in body, you can pass the body as following,
      
-     ```
+      ```
       {
           "fromAccountId": "1",
           "toAccountId": "2",
           "amountToTransfer": 10.0
       }
-    ```
+      ```
    
 ### Application Walkthrough
 
