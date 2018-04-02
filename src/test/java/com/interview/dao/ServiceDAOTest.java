@@ -88,7 +88,7 @@ public class ServiceDAOTest {
         given().contentType("application/json")
                 .body(sameAccounts)
                 .when().post("/transfer").then()
-                .body("errorMessage",equalTo("Cannot proceed, transactions happening between same accounts"));
+                .body("errorMessage",equalTo("Cannot proceed, Invalid account id entered"));
     }
 
     @Test

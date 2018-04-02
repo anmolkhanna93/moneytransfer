@@ -90,7 +90,7 @@ public class ServiceDAO {
 
         if(fromAccountId.equals(toAccountId)){
             LOG.error("Trying to transfer between same accounts");
-            throw new MoneyManagerException("Cannot proceed, transactions happening between same accounts");
+            throw new MoneyManagerException("Cannot proceed, Invalid account id entered");
         }
         Double amountToTransfer = transactions.getAmountToTransfer();
 
